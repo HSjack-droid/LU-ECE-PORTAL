@@ -91,7 +91,7 @@ body.dark-theme td {
 
 /* Styling the button itself */
 .mode-btn {
-    padding: 2rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 20px;
     border: 1px solid white;
@@ -99,8 +99,11 @@ body.dark-theme td {
     color: white;
     font-weight: bold;
     margin-top: 10px;
-    flrx-direction:column;
+    flex-direction:column;
     align-items:center;
+    position:absolute;
+   right:20px;
+    top:20px;
 }
 /* Zebra Stripes for Light Mode */
 table tr:nth-child(even) {
