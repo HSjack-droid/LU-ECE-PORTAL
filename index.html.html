@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LU B.Tech Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://www.lkouniv.ac.in/images/logo.png" alt="Lucknow University Logo" class="logo">
+        <div class="header-content">
+            <h1>Lucknow University: ECE HUB</h1>
+            <p>New Campus (Jankipuram) - ECE & Engineering Resources</p>
+            <button id="darkModeToggle" class="mode-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+    <div class="search-box">
+        <input type="text" id="facultySearch" onkeyup="searchFaculty()"
+            placeholder="Search for a professor or subject...">
+    </div>
+
+    <div class="container">
+        <a href="https://result.lkouniv.ac.in/Results/LU_OddResult2026" target="_blank" class="card">
+            <h3>Exam Results</h3>
+            <p>Check your odd semester marks.</p>
+        </a>
+
+        <a href="https://www.lkouniv.ac.in/en/page/online-fee-submission" target="_blank" class="card">
+            <h3>Fee Payment</h3>
+            <p>Pay semester fees & exam forms.</p>
+        </a>
+    </div>
+        <h2 style="margin-top: 50px;">Academic Resources</h2>
+    
+    <div class="container">
+    <div class="card">
+        <h3>ECE Syllabus</h3>
+        <p>Download the latest Syllabus for 1st, 2nd or 3rd year (NEP).</p>
+        <a href="https://drive.google.com/drive/folders/1yAevvxgpjzPeVfciTK05KrVWSdULSj1s" target="_blank" class="download-btn">Open in Drive</a>
+    </div>
+
+    <div class="card">
+        <h3>Previous Year Papers</h3>
+        <p>Access the archive of mid-sem and end-sem papers.</p>
+        <a href="https://drive.google.com/drive/folders/1tp_sFSYl92VbAGQ0ZYNZj0nY1_ay5Yra" target="_blank" class="download-btn">View Folder</a>
+    </div>
+
+    <div class="card">
+        <h3>ECE Department</h3>
+        <p>Syllabus, Faculty, and Lab info.</p>
+        <a href="https://udrc.lkouniv.ac.in/Department/DepartmentDetail/History?dept=57" target="_blank" class="download-btn">Visit Site</a>
+    </div>
+</div>
+    <section class="faculty-section">
+        <h2>ECE Department Faculty</h2>
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>DESIGNATION</th>
+                <th>CONTACT</th>
+            </tr>
+            <td>Prof. Satendra Pal Singh</td>
+            <td>Dean FoET</td>
+            <td>7991200653, 8840488502</td>
+            </tr>
+            <tr>
+                <td>Dr.Deepak Gupta</td>
+                <td>Assistant Prof.
+                    ,Department Coordinator
+                </td>
+                <td>9415945708</td>
+            </tr>
+            <tr>
+                <td>Dr. Zeeshan Ali Siddiqui</td>
+                <td>Assistant Professor, Department Coordinator(CSE)</td>
+
+                <td>9810513463</td>
+            </tr>
+        </table>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 LU B.Tech Student Hub | Designed with ❤️ for ECE Batchmates</p>
+            <p>Developed by <strong>[HSBUILDER]</strong></p>
+            <div class="footer-links">
+                <a href="mailto:your-gchsdna@gmail.com">Contact Admin</a> |
+                <a href="https://www.lkouniv.ac.in/" target="_blank">Official LU Site</a>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Last Updated: March 2026</p>
+        </div>
+        <p id="lastUpdated" style="text-align: center; margin-top: 20px; opacity: 0.6; font-size: 0.9rem;"></p>
+    </footer>
+</body>
+
+</html>

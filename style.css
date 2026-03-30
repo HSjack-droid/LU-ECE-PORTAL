@@ -1,0 +1,196 @@
+body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; text-align: center; }
+header { background: #800000; color: white; padding: 2rem; } /* LU Maroon Color */
+.container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+.card { 
+    background: white; border-radius: 12px; flex-direction:column; padding: 25px; margin: 0px;
+    width: 300px; text-decoration: none; color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+
+
+.faculty-section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* This removes double borders */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #800000; /* Matching the LU Maroon */
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlights the row when you hover over it */
+}
+
+.search-box {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#facultySearch {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #800000;
+    border-radius: 25px; /* Makes it rounded and modern */
+    outline: none;
+    font-size: 16px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card:hover .download-btn {
+    background-color: #D4AF37; /* Lightens slightly on hover */
+    color:black;
+}
+/* The Dark Mode Colors */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .card {
+    background-color: #2d2d2d;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark-theme table {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+body.dark-theme td {
+    border-color: #444;
+}
+
+/* Styling the button itself */
+.mode-btn {
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Zebra Stripes for Light Mode */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Zebra Stripes for Dark Mode */
+body.dark-theme table tr:nth-child(even) {
+    background-color: #252525; /* Slightly lighter than the base dark background */
+}
+
+/* Hover effect to highlight the specific row you are looking at */
+table tr:hover {
+    background-color: #fff4f4 !important; /* Light maroon tint for light mode */
+}
+
+body.dark-theme table tr:hover {
+    background-color: #3d1a1a !important; /* Deep maroon tint for dark mode */
+}
+.logo {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(255,255, 255, 0.3))saturate(1.2)contrast(1.1); /* Subtle Gold Glow */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight larger zoom on hover */
+}
+
+/* Ensure the header text stays centered with the logo */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack vertically on phones */
+        padding: 20px;
+    }
+
+    .logo {
+        width: 120px; /* Slightly smaller for mobile screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Shrink text so it doesn't wrap weirdly */
+    }
+}
+/* Add this to style.css for better table readability */
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-theme table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 30px 10px;
+    margin-top: 50px;
+    border-top: 3px solid #800000;
+}
+
+.footer-links a {
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Dark Mode Footer Adjustments */
+body.dark-theme footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-top: 3px solid #D4AF37; /* Gold border in dark mode */
+}
+
+body.dark-theme .footer-links a {
+    color: #D4AF37;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* This keeps them centered */
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Prevents the row from getting too wide */
+    margin: 0 auto;
+}
