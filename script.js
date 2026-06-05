@@ -50,3 +50,19 @@ const dateElement = document.getElementById('lastUpdated');
 const today = new Date();
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 dateElement.innerText = "Portal Last Updated: " + today.toLocaleDateString(undefined, options);
+function toggleChat() {
+  const container = document.getElementById('chat-widget-container');
+  
+  if (container.classList.contains('chat-closed') || !container.classList.contains('chat-open')) {
+    container.classList.remove('chat-closed');
+    container.classList.add('chat-open');
+  } else {
+    container.classList.remove('chat-open');
+    container.classList.add('chat-closed');
+  }
+}
+
+// Set initial state on page load
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('chat-widget-container').classList.add('chat-closed');
+});
