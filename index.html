@@ -37,8 +37,8 @@
     <div class="container">
     <div class="card">
         <h3>ECE Syllabus</h3>
-        <p>Download the latest Syllabus for 1st, 2nd or 3rd year (NEP).</p>
-        <a href="https://drive.google.com/drive/folders/1S0l_VDk9NfVP8IA-T99jig12yUti4e4m?usp=sharing" target="_blank" class="download-btn">View Folder</a>
+        <p>Download the latest Syllabus for 1st or 2nd year (NEP).</p>
+        <a href="https://drive.google.com/drive/folders/1S0l_VDk9NfVP8IA-T99jig12yUti4e4m?usp=sharing" target="_blank" class="download-btn">Open in Drive</a>
     </div>
 
     <div class="card">
@@ -53,8 +53,32 @@
         <a href="https://udrc.lkouniv.ac.in/Department/DepartmentDetail/History?dept=57" target="_blank" class="download-btn">Visit Site</a>
     </div>
 </div>
+<h2 style="margin-top: 50px;">Student Housing (Jankipuram Ext.)</h2>
+<div class="container housing-grid">
+    <div class="card">
+        <h3>Safe Stay Girls/Boys PG</h3>
+        <p><strong>Distance:</strong> 500m from New Campus</p>
+        <p><strong>Restrictions:</strong> No late entry after 10 PM</p>
+        <p><strong>Type:</strong> Single/Shared Rooms</p>
+        <a href="https://maps.app.goo.gl/YOUR_MAPS_LINK" target="_blank" class="download-btn">View on Maps</a>
+    </div>
+
+    <div class="card">
+        <h3>3BHK Flat - Sector J</h3>
+        <p><strong>Distance:</strong> 1.5km from Gate No. 1</p>
+        <p><strong>Restrictions:</strong> No Restrictions</p>
+        <p><strong>Type:</strong> Fully Furnished Flat</p>
+        <a href="https://maps.app.goo.gl/YOUR_MAPS_LINK" target="_blank" class="download-btn">View on Maps</a>
+    </div>
+</div>
+
+<div class="container map-section">
+    <h3>Nearby Locations Hub</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28455.566089132193!2d80.92393168745684!3d26.9369339089299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suniversity%20of%20lucknow%20second%20campus!5e0!3m2!1sen!2sin!4v1775479936055!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
     <section class="faculty-section">
         <h2>ECE Department Faculty</h2>
+        <div class="table-slider-container">
         <table>
             <tr>
                 <th>NAME</th>
@@ -68,16 +92,17 @@
             <tr>
                 <td>Dr.Deepak Gupta</td>
                 <td>Assistant Prof.
-                    ,Department Coordinator(ASH)
+                    ,Department Coordinator
                 </td>
                 <td>9415945708</td>
             </tr>
             <tr>
                 <td>Dr. Zeeshan Ali Siddiqui</td>
-                <td>Assistant Prof., Department Coordinator(CSE)</td>
+                <td>Assistant Professor, Department Coordinator(CSE)</td>
+
                 <td>9810513463</td>
             </tr>
-            <tr>
+             <tr>
                 <td>Dr. Siddharth Singh</td>
                 <td>Assistant Prof.,
                 Department Coordinator(ECE)</td>
@@ -114,6 +139,8 @@
             <td>9721049117</td>
             </tr>
         </table>
+        </table>
+        </div>
     </section>
     <script src="script.js"></script>
     <footer>
@@ -128,6 +155,25 @@
         </div>
         <p id="lastUpdated" style="text-align: center; margin-top: 20px; opacity: 0.6; font-size: 0.9rem;"></p>
     </footer>
+    <!-- Floating Chat Widget Container -->
+<div id="chat-widget-container" class="chat-closed">
+  <!-- The actual chat window (Iframe) -->
+  <div id="chat-window">
+    <iframe 
+      src="https://lu-ece.vercel.app/chat" 
+      frameborder="0" 
+      allow="microphone; camera"
+    ></iframe>
+  </div>
+
+  <!-- The Floating Button Clicked by the User -->
+  <button id="chat-toggle-btn" onclick="toggleChat()">
+    <!-- Simple Chat Icon (SVG) -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+</div>
 </body>
 
 </html>
