@@ -284,12 +284,16 @@ iframe {
 }
 /* This restricts the table height and handles the scrolling */
 .table-slider-container {
-  max-height: 350px; /* Limits the viewable box to roughly 5 faculty rows */
+  max-height: 300px; /* Limits the viewable box to roughly 5 faculty rows */
   overflow-y: auto;  /* Adds the scroll bar on the right automatically */
-  border-radius: 12px; /* Smooth corners matching your container design */
+  overflow-x: auto;
+    border-radius: 12px; /* Smooth corners matching your container design */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Gives it depth */
 }
-
+.table-slider-container table{
+    min-width:600px;
+    width:100%;
+}
 /* Optional: Smooth out the scrollbar styling for a cleaner dark theme look */
 .table-slider-container::-webkit-scrollbar {
   width: 8px;
@@ -302,4 +306,39 @@ iframe {
 .table-slider-container::-webkit-scrollbar-thumb {
   background: #E03E1D; /* Uses your theme's orange accent color for the scrollbar handle */
   border-radius: 4px;
+}
+/* --- Mobile Responsive Rules --- */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Reset your grid containers to layout vertically */
+  .card-container, 
+  .academic-resources-grid, 
+  .housing-grid {
+    display: flex;
+    flex-direction: column; /* Stacks items in 1 column instead of 2 side-by-side */
+    gap: 15px; /* Adds space between the stacked cards */
+    padding: 0 10px;
+  }
+
+  /* 2. Make individual cards take full width of the screen */
+  .card, .resource-box, .housing-card {
+    width: 100% !important; 
+    box-sizing: border-box;
+  }
+
+  /* 3. Handle the map element */
+  .map-container iframe, 
+  .map-containerimg {
+    width: 100% !important;
+    height: 250px; /* Make it a bit shorter so it fits nicely on a phone screen */
+  }
+
+  /* 4. Fix typography scaling for small screens */
+  h1 {
+    font-size: 1.8rem; /* Shrinks the main "LU: ECE HUB" header so it doesn't wrap awkwardly */
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
 }
