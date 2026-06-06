@@ -66,3 +66,17 @@ function toggleChat() {
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('chat-widget-container').classList.add('chat-closed');
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Fetch the document's built-in last modified timestamp
+    let lastModifiedDate = new Date(document.lastModified);
+    
+    // 2. Format the date into a clean, readable string (e.g., "June 7, 2026")
+    let options = { year: 'numeric', month: 'long', day: 'numeric' };
+    let formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
+    
+    // 3. Find your empty HTML paragraph and inject the text into it
+    const lastUpdatedElement = document.getElementById("lastUpdated");
+    if (lastUpdatedElement) {
+        lastUpdatedElement.textContent = "Last Updated: " + formattedDate;
+    }
+});
